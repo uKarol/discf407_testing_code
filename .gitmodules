@@ -1,0 +1,6 @@
+[submodule "revEMBer"]
+	path = revEMBer
+	url = https://github.com/uKarol/revEMBer.git
+[submodule "simple_map_file_extractor"]
+	path = simple_map_file_extractor
+	url = https://github.com/uKarol/simple_map_file_extractor.git
