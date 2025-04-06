@@ -1,0 +1,360 @@
+|HAL_InitTick entry 
+|-called by: main 
+|-HAL_NVIC_SetPriority entry 
+|--called by: HAL_InitTick 
+|-HAL_NVIC_SetPriority exit 
+|-HAL_InitTick entry 
+|--called by: HAL_InitTick 
+|--HAL_GPIO_Init entry 
+|---called by: HAL_IncTick 
+|--HAL_GPIO_Init exit 
+|--HAL_NVIC_EnableIRQ entry 
+|---called by: HAL_GetTick 
+|--HAL_SYSTICK_Config exit 
+|-HAL_Delay exit 
+|-NMI_Handler entry 
+|--called by: HAL_InitTick 
+|--HAL_NVIC_SetPriority entry 
+|---called by: MemManage_Handler 
+|--HAL_NVIC_SetPriority exit 
+|-MemManage_Handler exit 
+|HAL_InitTick exit 
+|SystemClock_Config entry 
+|-called by: main 
+|-HAL_RCC_OscConfig entry 
+|--called by: Error_Handler 
+|-HAL_RCC_ClockConfig exit 
+|-HAL_RCC_ClockConfig entry 
+|--called by: MX_SPI1_Init 
+|--HAL_RCC_GetSysClockFreq entry 
+|---called by: HAL_RCC_GetSysClockFreq 
+|--HAL_RCC_GetPCLK1Freq exit 
+|--HAL_InitTick entry 
+|---called by: HAL_RCC_GetSysClockFreq 
+|---HAL_GPIO_Init entry 
+|----called by: HAL_IncTick 
+|---HAL_GPIO_Init exit 
+|---HAL_NVIC_EnableIRQ entry 
+|----called by: HAL_GetTick 
+|---HAL_SYSTICK_Config exit 
+|--HAL_Delay exit 
+|-HAL_RCC_GetSysClockFreq exit 
+|MX_SPI1_Init exit 
+|MX_GPIO_Init entry 
+|-called by: main 
+|-HAL_I2C_Init entry 
+|--called by: MX_GPIO_Init 
+|-HAL_I2C_Init exit 
+|-HAL_I2C_Init entry 
+|--called by: MX_GPIO_Init 
+|-HAL_I2C_Init exit 
+|-HAL_I2C_Init entry 
+|--called by: MX_GPIO_Init 
+|-HAL_I2C_Init exit 
+|-HAL_GPIO_Init entry 
+|--called by: MX_GPIO_Init 
+|-HAL_GPIO_WritePin exit 
+|-HAL_GPIO_Init entry 
+|--called by: MX_GPIO_Init 
+|-HAL_GPIO_WritePin exit 
+|-HAL_GPIO_Init entry 
+|--called by: MX_GPIO_Init 
+|-HAL_GPIO_WritePin exit 
+|-HAL_GPIO_Init entry 
+|--called by: MX_GPIO_Init 
+|-HAL_GPIO_WritePin exit 
+|-HAL_GPIO_Init entry 
+|--called by: MX_GPIO_Init 
+|-HAL_GPIO_WritePin exit 
+|-HAL_GPIO_Init entry 
+|--called by: MX_GPIO_Init 
+|-HAL_GPIO_WritePin exit 
+|-HAL_GPIO_Init entry 
+|--called by: MX_GPIO_Init 
+|-HAL_GPIO_WritePin exit 
+|-HAL_GPIO_Init entry 
+|--called by: MX_GPIO_Init 
+|-HAL_GPIO_WritePin exit 
+|-HAL_GPIO_Init entry 
+|--called by: MX_GPIO_Init 
+|-HAL_GPIO_WritePin exit 
+|MX_GPIO_Init exit 
+|MX_I2C1_Init entry 
+|-called by: main 
+|-HAL_I2C_Init entry 
+|--called by: MX_I2C1_Init 
+|--HAL_I2C_MspInit entry 
+|---called by: HAL_I2C_Init 
+|---HAL_GPIO_Init entry 
+|----called by: HAL_I2C_MspInit 
+|---HAL_GPIO_WritePin exit 
+|--HAL_I2C_MspInit exit 
+|--HAL_RCCEx_PeriphCLKConfig entry 
+|---called by: HAL_I2C_Init 
+|--HAL_RCCEx_PeriphCLKConfig exit 
+|--HAL_RCC_GetPCLK1Freq entry 
+|---called by: HAL_RCCEx_PeriphCLKConfig 
+|--HAL_RCC_GetPCLK1Freq exit 
+|-HAL_I2S_Init exit 
+|MX_I2C1_Init exit 
+|MX_I2S3_Init entry 
+|-called by: main 
+|-HAL_I2S_Init entry 
+|--called by: MX_I2S3_Init 
+|--HAL_I2S_MspInit entry 
+|---called by: HAL_I2S_Init 
+|---HAL_RCCEx_PeriphCLKConfig entry 
+|----called by: HAL_I2S_MspInit 
+|---HAL_RCCEx_GetPeriphCLKFreq exit 
+|---HAL_GPIO_Init entry 
+|----called by: HAL_I2S_MspInit 
+|---HAL_GPIO_WritePin exit 
+|---HAL_GPIO_Init entry 
+|----called by: HAL_I2S_MspInit 
+|---HAL_GPIO_WritePin exit 
+|--HAL_I2S_MspInit exit 
+|--HAL_RCCEx_GetPeriphCLKFreq entry 
+|---called by: HAL_I2S_Init 
+|--HAL_SPI_Init exit 
+|-HAL_I2S_RxCpltCallback exit 
+|MX_I2S3_Init exit 
+|MX_SPI1_Init entry 
+|-called by: main 
+|-HAL_SPI_Init entry 
+|--called by: HAL_SPI_MspInit 
+|--HAL_SPI_MspInit entry 
+|---called by: HAL_SPI_Init 
+|---HAL_GPIO_Init entry 
+|----called by: HAL_MspInit 
+|---HAL_GPIO_WritePin exit 
+|--HAL_MspInit exit 
+|-USB_CoreInit exit 
+|HAL_SPI_MspInit exit 
+|MX_USB_DEVICE_Init entry 
+|-called by: main 
+|-USBD_Init entry 
+|--called by: CDC_Init_FS 
+|--USBD_LL_Init entry 
+|---called by: USBD_RegisterClass 
+|---HAL_PCD_Init entry 
+|----called by: USBD_LL_Start 
+|----HAL_PCD_MspInit entry 
+|-----called by: HAL_PCD_Init 
+|-----HAL_GPIO_Init entry 
+|------called by: HAL_PCD_MspInit 
+|-----HAL_GPIO_WritePin exit 
+|-----HAL_GPIO_Init entry 
+|------called by: HAL_PCD_SetupStageCallback 
+|-----HAL_GPIO_WritePin exit 
+|-----HAL_NVIC_EnableIRQ entry 
+|------called by: HAL_PCD_SetupStageCallback 
+|-----HAL_SYSTICK_Config exit 
+|-----HAL_SYSTICK_Config entry 
+|------called by: HAL_PCD_DataOutStageCallback 
+|-----HAL_GPIO_Init exit 
+|----HAL_PCD_DataOutStageCallback exit 
+|----USB_SetCurrentMode entry 
+|-----called by: HAL_PCD_Init 
+|----USB_SetCurrentMode exit 
+|----USB_CoreInit entry 
+|-----called by: HAL_PCD_Init 
+|-----USB_CoreReset entry 
+|------called by: USB_SetTurnaroundTime 
+|-----USBD_CDC_Init exit 
+|----USB_SetTurnaroundTime exit 
+|----USB_SetCurrentMode entry 
+|-----called by: HAL_PCD_Init 
+|-----USB_ActivateSetup entry 
+|------called by: USB_DevInit 
+|-----USB_ActivateSetup exit 
+|----USB_DevInit exit 
+|----USB_DevInit entry 
+|-----called by: HAL_PCD_Start 
+|-----USB_GetDevSpeed entry 
+|------called by: USB_DevInit 
+|-----USB_GetDevSpeed exit 
+|-----USB_FlushTxFifo entry 
+|------called by: USB_DevInit 
+|-----USB_FlushRxFifo exit 
+|-----USB_FlushRxFifo entry 
+|------called by: USB_DevInit 
+|-----USB_SetDevSpeed exit 
+|----USB_FlushTxFifo exit 
+|----USB_ReadInterrupts entry 
+|-----called by: HAL_PCD_Start 
+|----USB_ReadDevAllOutEpInterrupt exit 
+|---HAL_PCD_Start exit 
+|---HAL_PCDEx_LPM_Callback entry 
+|----called by: USBD_LL_Start 
+|---HAL_RCC_OscConfig exit 
+|---HAL_PCDEx_SetTxFiFo entry 
+|----called by: USBD_LL_Start 
+|---HAL_PCDEx_LPM_Callback exit 
+|---HAL_PCDEx_SetTxFiFo entry 
+|----called by: USBD_LL_Start 
+|---HAL_PCDEx_LPM_Callback exit 
+|--USBD_LL_Start exit 
+|-USBD_RegisterClass exit 
+|-USBD_RegisterClass entry 
+|--called by: CDC_Init_FS 
+|--USBD_CDC_GetFSCfgDesc entry 
+|---called by: USBD_Start 
+|---USBD_GetEpDesc entry 
+|----called by: USBD_CDC_GetHSCfgDesc 
+|----SWAPBYTE entry 
+|-----called by: USBD_GetNextDesc 
+|----USBD_StdDevReq exit 
+|----SWAPBYTE entry 
+|-----called by: USBD_GetNextDesc 
+|----USBD_StdDevReq exit 
+|----SWAPBYTE entry 
+|-----called by: USBD_GetNextDesc 
+|----USBD_StdDevReq exit 
+|----SWAPBYTE entry 
+|-----called by: USBD_GetNextDesc 
+|----USBD_StdDevReq exit 
+|----SWAPBYTE entry 
+|-----called by: USBD_GetNextDesc 
+|----USBD_StdDevReq exit 
+|----SWAPBYTE entry 
+|-----called by: USBD_GetNextDesc 
+|----USBD_StdDevReq exit 
+|---USBD_GetNextDesc exit 
+|---USBD_GetEpDesc entry 
+|----called by: USBD_CDC_GetHSCfgDesc 
+|----SWAPBYTE entry 
+|-----called by: USBD_GetNextDesc 
+|----USBD_StdDevReq exit 
+|----SWAPBYTE entry 
+|-----called by: USBD_GetNextDesc 
+|----USBD_StdDevReq exit 
+|----SWAPBYTE entry 
+|-----called by: USBD_GetNextDesc 
+|----USBD_StdDevReq exit 
+|----SWAPBYTE entry 
+|-----called by: USBD_GetNextDesc 
+|----USBD_StdDevReq exit 
+|----SWAPBYTE entry 
+|-----called by: USBD_GetNextDesc 
+|----USBD_StdDevReq exit 
+|----SWAPBYTE entry 
+|-----called by: USBD_GetNextDesc 
+|----USBD_StdDevReq exit 
+|----SWAPBYTE entry 
+|-----called by: USBD_GetNextDesc 
+|----USBD_StdDevReq exit 
+|----SWAPBYTE entry 
+|-----called by: USBD_GetNextDesc 
+|----USBD_StdDevReq exit 
+|---USBD_GetNextDesc exit 
+|---USBD_GetEpDesc entry 
+|----called by: USBD_CDC_GetHSCfgDesc 
+|----SWAPBYTE entry 
+|-----called by: USBD_GetNextDesc 
+|----USBD_StdDevReq exit 
+|----SWAPBYTE entry 
+|-----called by: USBD_GetNextDesc 
+|----USBD_StdDevReq exit 
+|----SWAPBYTE entry 
+|-----called by: USBD_GetNextDesc 
+|----USBD_StdDevReq exit 
+|----SWAPBYTE entry 
+|-----called by: USBD_GetNextDesc 
+|----USBD_StdDevReq exit 
+|----SWAPBYTE entry 
+|-----called by: USBD_GetNextDesc 
+|----USBD_StdDevReq exit 
+|----SWAPBYTE entry 
+|-----called by: USBD_GetNextDesc 
+|----USBD_StdDevReq exit 
+|----SWAPBYTE entry 
+|-----called by: USBD_GetNextDesc 
+|----USBD_StdDevReq exit 
+|----SWAPBYTE entry 
+|-----called by: USBD_GetNextDesc 
+|----USBD_StdDevReq exit 
+|----SWAPBYTE entry 
+|-----called by: USBD_GetNextDesc 
+|----USBD_StdDevReq exit 
+|---USBD_GetNextDesc exit 
+|--USBD_CDC_GetHSCfgDesc exit 
+|-USBD_RunTestMode exit 
+|-USBD_CDC_SetTxBuffer entry 
+|--called by: CDC_Init_FS 
+|-USBD_CDC_SetTxBuffer exit 
+|-USBD_SetClassConfig entry 
+|--called by: CDC_Init_FS 
+|-USBD_SetClassConfig exit 
+|-USBD_LL_OpenEP entry 
+|--called by: USBD_SetClassConfig 
+|--HAL_PCD_Start entry 
+|---called by: USBD_LL_OpenEP 
+|---USB_DisableGlobalInt entry 
+|----called by: HAL_PCD_IRQHandler 
+|---USB_SetCurrentMode exit 
+|---USB_DevDisconnect entry 
+|----called by: HAL_PCD_IRQHandler 
+|---USB_DevDisconnect exit 
+|--HAL_PCD_IRQHandler exit 
+|--memset entry 
+|---called by: USBD_LL_OpenEP 
+|--__libc_init_array exit 
+|-USBD_LL_OpenEP exit 
+|CDC_Init_FS exit 
+|CDC_TransmitCplt_FS entry 
+|-called by: main 
+|CDC_TransmitCplt_FS exit 
+|CDC_TransmitCplt_FS entry 
+|-called by: main 
+|CDC_TransmitCplt_FS exit 
+|CDC_TransmitCplt_FS entry 
+|-called by: main 
+|CDC_TransmitCplt_FS exit 
+|CDC_TransmitCplt_FS entry 
+|-called by: main 
+|CDC_TransmitCplt_FS exit 
+|CDC_TransmitCplt_FS entry 
+|-called by: main 
+|CDC_TransmitCplt_FS exit 
+|CDC_TransmitCplt_FS entry 
+|-called by: SystemClock_Config 
+|CDC_TransmitCplt_FS exit 
+|CDC_TransmitCplt_FS entry 
+|-called by: SystemClock_Config 
+|CDC_TransmitCplt_FS exit 
+|CDC_TransmitCplt_FS entry 
+|-called by: SystemClock_Config 
+|CDC_TransmitCplt_FS exit 
+|CDC_TransmitCplt_FS entry 
+|-called by: SystemClock_Config 
+|CDC_TransmitCplt_FS exit 
+|CDC_TransmitCplt_FS entry 
+|-called by: SystemClock_Config 
+|CDC_TransmitCplt_FS exit 
+|CDC_TransmitCplt_FS entry 
+|-called by: SystemClock_Config 
+|CDC_TransmitCplt_FS exit 
+|CDC_TransmitCplt_FS entry 
+|-called by: SystemClock_Config 
+|CDC_TransmitCplt_FS exit 
+|CDC_TransmitCplt_FS entry 
+|-called by: SystemClock_Config 
+|CDC_TransmitCplt_FS exit 
+|CDC_TransmitCplt_FS entry 
+|-called by: SystemClock_Config 
+|CDC_TransmitCplt_FS exit 
+|CDC_TransmitCplt_FS entry 
+|-called by: SystemClock_Config 
+|CDC_TransmitCplt_FS exit 
+|CDC_TransmitCplt_FS entry 
+|-called by: SystemClock_Config 
+|None exit 
+|CDC_TransmitCplt_FS entry 
+|-called by: SystemClock_Config 
+|None exit 
+|MX_GPIO_Init exit 
+cannot decode 
+param id: 8 
+raw data 0x2 
+|None entry 
+
